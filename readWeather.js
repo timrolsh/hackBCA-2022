@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const options = {
     method: "GET",
-    url: "https://community-open-weather-map.p.rapidapi.com/weather",
+    url: "https://community-open-weather-map.p.rapidapi.com/find",
     params: {
         q: "Hackensack,US",
         lat: "0",
@@ -15,7 +15,8 @@ const options = {
         mode: "json",
     },
     headers: {
-        "X-RapidAPI-Host": "community-open-weather-map.p.rapidapi.com",
+        "content-type": "application/octet-stream",
+        "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
         "X-RapidAPI-Key": "a30b1ffca6msh55ee39a16f602e9p1d4d43jsna8de07bea9f6",
     },
 };

@@ -14,45 +14,46 @@
     </head>
 
     <body>
-        <div class="row">
-            <h1 class="header">WeatherHack++</h1>
-        </div>
-        <div class="row">
-            <p class="slogan">Dress Your Best for Today and the Future</p>
-        </div>
         <div class="container">
+            <!-- Header -->
+            <div class="row">
+                <h1 class="header">WeatherHack++</h1>
+                <p id="slogan">Dress Your Best for Today and the Future!!</p>
+                <p id="home_page_text">
+                    By Tim Rolshud, David Lee, Nico Kichukov, Jayden Maeng:
+                    HackBCA 2022
+                </p>
+            </div>
             <div class="row">
                 <!-- search for city input field -->
                 <div class="input-field col s9" id="button_outline">
                     <input
                         id="city_button_text"
-                        placeholder="City"
+                        placeholder="Enter City"
                         type="text"
-                        class="validate"
                     />
                 </div>
                 <!-- button -->
-                <a class="waves-effect waves-light btn-large col s3">Search</a>
+                <button
+                    class="waves-effect waves-light btn-large col s3"
+                    id="search_button"
+                >
+                    Search
+                </button>
             </div>
         </div>
-        <!-- bunch of rows for white space LOL -->
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
-        <p id="home_page_text">
-            By Tim Rolshud, David Lee, Nico Kichukov, Jayden Maeng
-        </p>
 
-        <!-- our own css -->
-        <link rel="stylesheet" href="siteCSS.css" />
-        <!-- materialize css -->
+        <!-- materialize stuff -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         />
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- our own css -->
+        <link rel="stylesheet" href="homeCSS.css" />
+
+        <!-- main.js script -->
+        <script src="./homeSubmit.js"></script>
     </body>
 </html>

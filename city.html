@@ -4,9 +4,72 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title class="title">WeatherHack++</title>
+        <title>City++</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <script src="./readWeather.js"></script>
     </head>
     <body>
-        <h1>WeatherHack++</h1>
+        <!-- CSS Setup -->
+        <div class="container">
+            <!-- Header -->
+            <div class="row">
+                <h1 class="header">WeatherHack++</h1>
+            </div>
+        </div>
+        <link rel="stylesheet" href="cityCSS.css" />
+        
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- Now Start the Table -->
+
+        <div class="btn-group">
+            <button id = "monday_button" > Monday</button>
+            <button id = "tuesday_button" > Tuesday</button>
+            <button id = "wednesday_button"> Wednesday</button>
+            <button id = "thursday_button" >Thursday</button>
+            <button id = "friday_button" > Friday</button>
+            <button id = "saturday_button" >Saturday</button>
+            <button id = "sunday_button"> Sunday</button>
+        </div>
+
+        <!-- <table>     Table format in case we need it
+            <tr>
+                <th>Day</th>
+                <th>Weather</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+            </tr>
+
+            <tr>
+                <th>Wednesday</th>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+            </tr>
+            <tr>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <th>Sunday</th>
+            </tr>
+        </table> -->
+        <script src="./city.js"></script>
     </body>
 </html>

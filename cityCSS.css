@@ -1,0 +1,101 @@
+body {
+    background-image: url("https://i.imgur.com/KaQcInE.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+    font-size: 120px;
+    font-family: "Oswald", sans-serif;
+}
+
+#slogan {
+    text-align: center;
+    font-size: 55px;
+    font-family: "Oswald", sans-serif;
+}
+
+#home_page_text {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: rgb(81, 77, 77);
+}
+
+#city_button_text {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+#monday_button {
+    left: 30px;
+    font-size: 50px;
+    color: black;
+    height: 75px;
+    width: 270px;
+    border: 50;
+    border-color: black;
+}
+#tuesday_button {
+    height: 75px;
+    width: 270px;
+    font-size: 50px;
+    color: black;
+    border: 10;
+    border-color: black;
+}
+#wednesday_button {
+    height: 75px;
+    width: 270px;
+    font-size: 50px;
+    color: black;
+    border: 3;
+    border-color: black;
+}
+#thursday_button {
+    height: 75px;
+    width: 270px;
+    font-size: 50px;
+    color: black;
+    border: 3;
+    border-color: black;
+}
+#friday_button {
+    height: 75px;
+    width: 270px;
+    font-size: 50px;
+    color: black;
+    border: 3;
+    border-color: black;
+}
+#saturday_button {
+    height: 75px;
+    width: 270px;
+    font-size: 50px;
+    color: black;
+    border: 3;
+    border-color: black;
+}
+#sunday_button {
+    height: 75px;
+    width: 270px;
+    font-size: 50px;
+    color: black;
+    border: 3;
+    border-color: black;
+}
+
+#button_outline {
+    border: 3;
+    border-color: black;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.3;
+}
+
+#search_button {
+    font-size: 25px;
+}
+
