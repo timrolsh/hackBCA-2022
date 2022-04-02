@@ -1,0 +1,36 @@
+body {
+    background-image: url("https://i.imgur.com/KaQcInE.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+    font-size: 150px;
+    font-family: "Oswald", sans-serif;
+}
+
+.slogan {
+    text-align: center;
+
+    position: relative;
+    top: -40px;
+    font-size: 55px;
+    font-family: "Oswald", sans-serif;
+}
+
+#home_page_text {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: rgb(81, 77, 77);
+}
+
+#city_button_text {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+#button_outline {
+    border-bottom: 10px;
+}
