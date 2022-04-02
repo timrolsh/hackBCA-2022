@@ -1,34 +1,12 @@
 const axios = require("axios");
 const fs = require("fs");
 
-const options = {
-    method: "GET",
-    url: "https://community-open-weather-map.p.rapidapi.com/find",
-    params: {
-        q: "Hackensack,US",
-        lat: "0",
-        lon: "0",
-        callback: "test",
-        id: "0",
-        lang: "en",
-        units: "imperial",
-        mode: "json",
-    },
-    headers: {
-        "content-type": "application/octet-stream",
-        "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-        "X-RapidAPI-Key": "a30b1ffca6msh55ee39a16f602e9p1d4d43jsna8de07bea9f6",
-    },
-};
+const city = "Hackensack,NJ";
+const url =
+    "https://api.weatherapi.com/v1/forecast.json?key=55daed32ec294eababf141438220204&q=" +
+    city +
+    "&days=7&aqi=no&alerts=no";
 
-axios
-    .request(options)
-    .then(function (response) {
-        fs.writeFileSync(
-            "data.json",
-            response.data.substring(5, response.data.length - 1)
-        );
-    })
-    .catch(function (error) {
-        console.error(error);
-    });
+axios.get(url).then(function (response) {
+    fs.writeFileSync("data.json", JSON.stringify(response.data));
+});
